@@ -68,4 +68,5 @@ def get_average_age_for_season(data, season)
     end
   end
   (tAge/nCont).round
+  puts "#{nCont} and #{tAge}"
 end
