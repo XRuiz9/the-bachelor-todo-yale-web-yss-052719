@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
   data.each do |ss, contestants|
     if ss == season
       contestants.each do |category, value|
-        if category == "status" && value == "winner"
+        if category == "status" && value == "Winner"
           winner = hi
         end
       end
