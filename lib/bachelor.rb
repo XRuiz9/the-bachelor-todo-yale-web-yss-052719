@@ -15,7 +15,17 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  woman = ""
+  data.each do |ss, contestants|
+    contestants.each do |contestant|
+      contestant.each do |info, value|
+        if value == occupation
+          woman = contestant["name"]
+        end
+      end
+    end
+  end
+  woman
 end
 
 def count_contestants_by_hometown(data, hometown)
