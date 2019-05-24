@@ -60,6 +60,7 @@ def get_average_age_for_season(data, season)
   nCont = 0
   tAge = 0
   data.each do |ss, contestants|
+    if ss == season
     contestants.each do |contestant|
       contestant.each do |info, value|
         nCont += 1
